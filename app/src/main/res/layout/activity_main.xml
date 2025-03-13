@@ -1,86 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:padding="16dp">
+<layout>
+    <data>
+        <variable
+            name="ScoreViewModel"
+            type="com.example.kabaddi.ScoreViewModel" />
+    </data>
 
-    <TextView
-        android:id="@+id/main"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Kabaddi Score Board"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:paddingBottom="16dp"/>
-
-    <LinearLayout
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
 
-        <LinearLayout
+        <TextView
+            android:id="@+id/main"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="16dp">
-
-            <TextView
-                android:id="@+id/skorA"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="0"
-                android:textSize="48sp"
-                android:textStyle="bold"/>
-
-            <Button
-                android:id="@+id/tambah1a"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="+1 Team A"/>
-
-            <Button
-                android:id="@+id/tambah2a"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="+2 Team A"/>
-        </LinearLayout>
+            android:text="Kabaddi Score Board"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:paddingBottom="16dp"/>
 
         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/skorA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="48sp"
+                    android:textStyle="bold"/>
+
+                <Button
+                    android:id="@+id/tambah1a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+1 Team A"/>
+
+                <Button
+                    android:id="@+id/tambah2a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+2 Team A"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/skorB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="48sp"
+                    android:textStyle="bold"/>
+
+                <Button
+                    android:id="@+id/tambah1b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+1 Team B"/>
+
+                <Button
+                    android:id="@+id/tambah2b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+2 Team B"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnreset"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="16dp">
+            android:text="Reset Score"
+            android:layout_marginTop="16dp"/>
 
-            <TextView
-                android:id="@+id/skorB"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="0"
-                android:textSize="48sp"
-                android:textStyle="bold"/>
-
-            <Button
-                android:id="@+id/tambah1b"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="+1 Team B"/>
-
-            <Button
-                android:id="@+id/tambah2b"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="+2 Team B"/>
-        </LinearLayout>
     </LinearLayout>
-
-    <Button
-        android:id="@+id/btnreset"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Reset Score"
-        android:layout_marginTop="16dp"/>
-
-</LinearLayout>
+</layout>
