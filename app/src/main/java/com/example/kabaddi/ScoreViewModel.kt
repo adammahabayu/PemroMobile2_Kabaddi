@@ -18,6 +18,7 @@ class ScoreViewModel : ViewModel() {
         checkMaxScore()
     }
 
+
     fun incrementScoreB() {
         _scoreB.value = (_scoreB.value ?: 0) + 1
         checkMaxScore()
